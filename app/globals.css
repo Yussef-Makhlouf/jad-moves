@@ -3,25 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: #2B3990;
+  --secondary-color: #E31E24;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-h-9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes subtle-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
+
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-subtle-zoom {
+  animation: subtle-zoom 20s ease-in-out infinite alternate;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
+  background-size: 200% 200%;
 }

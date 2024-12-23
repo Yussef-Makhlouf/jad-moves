@@ -1,0 +1,26 @@
+{
+  "name": "نقل بلا حدود - خدمات نقل الأثاث في الرياض",
+  "short_name": "نقل الأثاث في الرياض",
+  "description": "شركة رائدة في نقل الأثاث والعفش في الرياض",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "02.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "03.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
